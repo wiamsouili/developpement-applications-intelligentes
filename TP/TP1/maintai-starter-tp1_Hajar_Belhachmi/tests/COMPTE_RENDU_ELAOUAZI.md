@@ -9,7 +9,7 @@
 
 ## 1. Mise en place
 
-DDernière ligne de python -m pytest, juste après la mise en place (avant toute modification du code API) :
+Dernière ligne de python -m pytest, juste après la mise en place (avant toute modification du code API) :
 =========================== 3 failed, 10 passed   ===========================
 Les 4 tests de tests/test_api.py qui passent déjà doivent être nommés d’après les intitulés exacts du fichier de tests. Je ne dispose pas ici du contenu complet de tests/test_api.py, donc je ne peux pas les identifier avec certitude sans inventer leurs noms.
 
