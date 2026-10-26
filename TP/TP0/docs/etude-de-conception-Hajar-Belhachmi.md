@@ -1,8 +1,8 @@
-# Étude de conception — Prédiction des pannes industrielles par apprentissage automatique
+# Étude de conception — Prédiction des pannes industrielles 
 
-**Réalisée par le groupe 3 :BELHACHMI Hajar
+**Réalisée par :BELHACHMI Hajar
 
-**Version :** 1.0 · **Date :** 24/10/2026
+**Version :** 2.0 · **Date :** 26/10/2026
 
 ## 1. Contexte et utilisateurs
 

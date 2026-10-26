@@ -1,7 +1,7 @@
-# Choix du modèle : prédiction des pannes industrielles par apprentissage automatique
+# Choix du modèle : prédiction des pannes industrielles 
 
-**Date :** 24/10/2026
-**Réalisée par : BELHACHMI Hajar
+Date :** 26/10/2026
+Réalisée par : BELHACHMI Hajar
 
 ## 1. Contexte
 
