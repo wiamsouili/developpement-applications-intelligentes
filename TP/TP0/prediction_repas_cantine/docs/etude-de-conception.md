@@ -1,6 +1,6 @@
 # Étude de conception : CantineAI, prévision du nombre de repas à la cantine
 
-**Réalisée par le groupe 3 :** SOUILI Wiam, ELAOUAZI Hafsa, YEKHLEF Aya, BELHACHMI Hajar
+Réalisée par : BELHACHMI Hajar
 
 **Version :** 1.0 · **Date :** 24/10/2026
 

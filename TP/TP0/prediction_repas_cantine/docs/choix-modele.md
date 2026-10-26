@@ -1,7 +1,7 @@
 # Choix du modèle : prévision du nombre de repas à la cantine
 
 **Date :** 24/10/2026
-**Réalisé par le groupe 3 :** SOUILI Wiam, ELAOUAZI Hafsa, YEKHLEF Aya, BELHACHMI Hajar
+**Réalisé par : BELHACHMI Hajar
 
 ## 1. Contexte
 

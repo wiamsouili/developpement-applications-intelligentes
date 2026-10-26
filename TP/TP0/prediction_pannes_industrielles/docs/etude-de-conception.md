@@ -1,6 +1,6 @@
 # Étude de conception — Prédiction des pannes industrielles par apprentissage automatique
 
-**Réalisée par le groupe 3 :** SOUILI Wiam, ELAOUAZI Hafsa, YEKHLEF Aya, BELHACHMI Hajar
+**Réalisée par le groupe 3 :BELHACHMI Hajar
 
 **Version :** 1.0 · **Date :** 24/10/2026
 

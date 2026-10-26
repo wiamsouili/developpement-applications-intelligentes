@@ -1,7 +1,7 @@
 # Choix du modèle : prédiction des pannes industrielles par apprentissage automatique
 
 **Date :** 24/10/2026
-**Réalisé par le groupe 3 :** SOUILI Wiam, ELAOUAZI Hafsa, YEKHLEF Aya, BELHACHMI Hajar
+**Réalisée par : BELHACHMI Hajar
 
 ## 1. Contexte
 

@@ -1,6 +1,6 @@
 # Prédiction des pannes industrielles par apprentissage automatique
 
-**Groupe 3 :** SOUILI Wiam, ELAOUAZI Hafsa, YEKHLEF Aya, BELHACHMI Hajar
+Réalisée par : BELHACHMI Hajar
 
 Ce projet compare plusieurs modèles de classification pour repérer les machines qui présentent un risque de panne, à partir de leurs mesures de fonctionnement (température, vibrations, charge, durée de fonctionnement). Il s'adresse à un ingénieur de maintenance qui doit décider quelles machines inspecter en priorité.
 

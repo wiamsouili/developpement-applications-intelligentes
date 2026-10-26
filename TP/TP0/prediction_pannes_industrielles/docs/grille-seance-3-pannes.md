@@ -1,6 +1,6 @@
 # Séance 3 : grille de conception du projet de prédiction de pannes
 
-**Groupe 3 :** SOUILI Wiam, ELAOUAZI Hafsa, YEKHLEF Aya, BELHACHMI Hajar
+**Groupe 3 : BELHACHMI Hajar
 
 Cette grille reprend les sections 1 à 5 de l'étude de conception, les réglages de `config.py` qui en découlent et la réponse à la question finale.
 

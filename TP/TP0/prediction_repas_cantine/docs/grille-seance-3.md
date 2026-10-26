@@ -1,6 +1,6 @@
 # Séance 3 : grille de conception de CantineAI
 
-**Groupe 3 :** SOUILI Wiam, ELAOUAZI Hafsa, YEKHLEF Aya, BELHACHMI Hajar
+ Réalisée par : BELHACHMI Hajar
 
 Cette grille reprend les sections 1 à 5 de l'étude de conception de CantineAI, les réglages de `config.py` qui en découlent et la réponse à la question finale. Le détail est développé dans `etude-de-conception.md` et `choix-modele.md`.
 

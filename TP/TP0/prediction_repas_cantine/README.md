@@ -1,6 +1,6 @@
 # CantineAI : prévoir le nombre de repas à la cantine
 
-**Groupe 3 :** SOUILI Wiam, ELAOUAZI Hafsa, YEKHLEF Aya, BELHACHMI Hajar
+Réalisée par : BELHACHMI Hajar
 
 Ce projet prévoit le nombre de repas servis à la cantine d'un lycée (environ 650 élèves inscrits) pour un jour donné, à partir de ce que le gestionnaire sait la veille : le menu, la météo prévue, le calendrier des examens et des sorties scolaires. Il remplace la méthode actuelle, qui consiste à reprendre le chiffre du même jour de la semaine précédente. C'est une régression sur une série temporelle.
 
