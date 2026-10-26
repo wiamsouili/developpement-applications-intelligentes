@@ -1,6 +1,6 @@
 # ADR 000 : [titre de la décision]
 
-Date : [jj/mm/aaaa] · Auteurs : [noms]
+Date : [26/10/2026] · Auteurs : [EL AOUAZI]
 
 ## Contexte
 Dans MaintAI, l’API reçoit des valeurs provenant des capteurs avant de les transmettre au modèle de prédiction. Des valeurs incohérentes ou l’absence du modèle peuvent empêcher une prédiction fiable ; il faut donc définir comment l’API doit réagir dans ces cas.
