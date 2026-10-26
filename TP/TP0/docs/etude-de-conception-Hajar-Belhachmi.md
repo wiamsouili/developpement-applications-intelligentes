@@ -72,29 +72,8 @@ Les seuils définitifs seront fixés après les échanges avec le responsable de
 
 **Suivi des critères :** le bilan chiffré figure dans `docs/choix-modele.md`. En résumé, le critère 1 est atteint (recall de 0,597 contre 0 pour la baseline), le critère 2 ne l'est pas (0,597 pour un objectif de 0,80), le critère 4 ne s'applique pas faute de dates, et la comparaison du critère 5 montre que la charge seule ne permet presque pas de détecter les pannes (recall de 0 à 0,04).
 
-## 6. Architecture prévue
 
-1. **Acquisition :** récupération des mesures de charge, température et vibrations.
-2. **Stockage :** conservation des données et de l'historique des pannes dans des fichiers CSV ou une base de données.
-3. **Prétraitement :** validation, nettoyage, traitement des valeurs manquantes et création des variables prédictives.
-4. **Entraînement :** comparaison des modèles ML avec une baseline.
-5. **Évaluation :** calcul des métriques sur un jeu de test indépendant.
-6. **Prédiction :** estimation du risque de panne à partir des nouvelles mesures.
-7. **Restitution :** affichage du risque, des principales variables contributives et des alertes destinées au personnel de maintenance.
-
-## 7. Choix technologiques
-
-- **Langage :** Python.
-- **Manipulation des données :** Pandas et NumPy.
-- **Apprentissage automatique :** scikit-learn.
-- **Prétraitement :** `ColumnTransformer`, `SimpleImputer`, `StandardScaler` et `OneHotEncoder`.
-- **Modèles :** DummyClassifier, régression logistique, arbre de décision, Random Forest et KNN.
-- **Évaluation :** métriques scikit-learn et tableau comparatif avec Pandas.
-- **Sauvegarde :** Joblib pour le modèle et JSON pour les résultats.
-- **Tests :** pytest, avec 8 tests sur le chargement, le découpage, les modèles et l'entraînement.
-- **Visualisation envisagée :** Matplotlib ou Seaborn pour les analyses exploratoires.
-
-## 8. Risques, éthique, confidentialité
+## 6. Risques, éthique, confidentialité
 
 - **Déséquilibre des classes :** le nombre de pannes peut être faible par rapport au fonctionnement normal. L'accuracy seule serait donc insuffisante.
 - **Fuite de données :** aucune information postérieure à la panne ne doit être utilisée pour prédire cette panne.
@@ -105,7 +84,7 @@ Les seuils définitifs seront fixés après les échanges avec le responsable de
 - **Confidentialité :** limiter les données aux informations nécessaires, contrôler les accès et vérifier que les historiques de maintenance ne contiennent pas d'informations personnelles.
 - **Validation :** tester le modèle sur des données indépendantes avant toute utilisation réelle.
 
-## 9. Limites et hors périmètre
+## 7. Limites et hors périmètre
 
 - Le projet prédit un risque de panne, mais ne garantit pas qu'une panne surviendra.
 - Il ne détermine pas nécessairement la cause physique exacte de la défaillance.
@@ -191,28 +170,8 @@ Un réseau de neurones n'est pas justifié avec 340 lignes et neuf variables. Un
   - Le seuil de 30 repas est une proposition à valider avec le gestionnaire.
 - **Découpage :** chronologique. L'entraînement porte sur les jours les plus anciens, le test sur les plus récents, car le système doit prévoir l'avenir.
 
-## 6. Architecture prévue
 
-1. **Acquisition :** le gestionnaire (ou un export de la gestion scolaire) fournit chaque jour l'effectif inscrit, le menu, la météo prévue et le calendrier du lendemain.
-2. **Stockage :** un fichier CSV qui s'enrichit chaque jour des repas réellement servis.
-3. **Prétraitement :** vérification, imputation, standardisation, encodage des catégories.
-4. **Entraînement :** comparaison des modèles à la baseline, avec `python -m monprojet.train`.
-5. **Évaluation :** MAE, RMSE et R2 sur les derniers jours, et comparaison à la méthode actuelle.
-6. **Prédiction :** estimation du nombre de repas pour le lendemain avec le modèle sauvegardé.
-7. **Restitution :** le nombre de repas à commander, présenté au gestionnaire avec la prévision de la méthode actuelle pour comparaison.
-
-## 7. Choix technologiques
-
-- **Langage :** Python.
-- **Manipulation des données :** pandas et NumPy.
-- **Apprentissage automatique :** scikit-learn.
-- **Prétraitement :** `ColumnTransformer`, `SimpleImputer`, `StandardScaler` et `OneHotEncoder`.
-- **Modèles :** DummyRegressor, régression linéaire, arbre de décision, Random Forest et KNN.
-- **Évaluation :** métriques scikit-learn et tableau comparatif avec pandas.
-- **Sauvegarde :** joblib pour le modèle et JSON pour les résultats.
-- **Tests :** pytest, avec 8 tests sur le chargement, le découpage chronologique, les modèles et l'entraînement.
-
-## 8. Risques, éthique, confidentialité
+## 6. Risques, éthique, confidentialité
 
 - **Fuite de données :** un tirage au hasard des jours de test placerait dans l'entraînement la veille ou la semaine précédente d'un jour de test. Le découpage chronologique évite ce risque.
 - **Évolution de l'effectif :** le nombre d'inscrits change avec le temps. Un modèle entraîné sur le passé peut se tromper si l'effectif sort de la plage vue à l'entraînement ; il faut le réentraîner régulièrement.
@@ -222,7 +181,7 @@ Un réseau de neurones n'est pas justifié avec 340 lignes et neuf variables. Un
 - **Confidentialité :** le projet n'utilise que des effectifs agrégés. Si des données par élève étaient ajoutées, il faudrait limiter les informations et contrôler les accès.
 - **Validation :** comparer le modèle à la méthode actuelle sur plusieurs semaines réelles avant de le substituer.
 
-## 9. Limites et hors périmètre
+## 7. Limites et hors périmètre
 
 - Le projet prévoit un nombre de repas, il ne garantit pas qu'il sera exact.
 - Il ne gère pas la composition des menus, les allergies ni les approvisionnements de la cuisine.
