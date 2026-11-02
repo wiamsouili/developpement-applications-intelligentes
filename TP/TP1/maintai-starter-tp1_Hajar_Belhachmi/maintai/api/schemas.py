@@ -1,4 +1,5 @@
 """Schémas d'entrée et de sortie de l'API, validés par Pydantic."""
+
 from pydantic import BaseModel, ConfigDict, Field
 
 
@@ -9,27 +10,42 @@ class SensorReading(BaseModel):
         extra="forbid",  # refuse les champs inconnus
         json_schema_extra={
             "examples": [
-                {"temperature_c": 72.5, "vibration_mm_s": 6.1, "load_pct": 85.0, "runtime_hours": 15000}
+                {
+                    "temperature_c": 72.5,
+                    "vibration_mm_s": 6.1,
+                    "load_pct": 85.0,
+                    "runtime_hours": 15000,
+                }
             ]
         },
     )
 
     temperature_c: float = Field(
-        ge=-40, le=150, description="Température de la machine en °C, comprise entre -40 et 150."
+        ge=-40,
+        le=150,
+        description="Température de la machine en °C, comprise entre -40 et 150.",
     )
     vibration_mm_s: float = Field(
-        ge=0, le=100, description="Vitesse de vibration en mm/s, comprise entre 0 et 100."
+        ge=0,
+        le=100,
+        description="Vitesse de vibration en mm/s, comprise entre 0 et 100.",
     )
     load_pct: float = Field(
-        ge=0, le=100, description="Charge de la machine en pourcentage, comprise entre 0 et 100."
+        ge=0,
+        le=100,
+        description="Charge de la machine en pourcentage, comprise entre 0 et 100.",
     )
     runtime_hours: float = Field(
-        ge=0, le=200_000, description="Heures de fonctionnement cumulées, entre 0 et 200 000."
+        ge=0,
+        le=200_000,
+        description="Heures de fonctionnement cumulées, entre 0 et 200 000.",
     )
 
 
 class PredictionOut(BaseModel):
-    failure_probability: float = Field(description="Probabilité estimée de panne, entre 0 et 1")
+    failure_probability: float = Field(
+        description="Probabilité estimée de panne, entre 0 et 1"
+    )
     alert: bool = Field(description="Vrai si la probabilité atteint le seuil")
     threshold: float
     model_version: str
