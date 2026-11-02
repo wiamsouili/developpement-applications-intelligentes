@@ -266,10 +266,12 @@ Le navigateur applique donc la politique CORS lorsqu'une page servie sur le port
 
 ## 8. Le rendu Git
 
-- **Lien de la pull request :** à compléter avec le lien GitHub.
-- **Le tag `tp2` existe sur GitHub :** à vérifier.
-- **`git status` avant le commit : le fichier `.env` apparaissait-il ?** Normalement non, car il doit être ignoré par `.gitignore`.
-- **Qui a relu la pull request, et quel commentaire a-t-il laissé ?** À compléter selon les informations de GitHub.
+- **Lien de la pull request :** Aucune Pull Request n'a été créée. Les modifications ont été directement envoyées sur la branche `main`.
+- **Le tag `tp2` existe sur GitHub :** Oui. Le tag `tp2` a été créé et envoyé avec succès sur GitHub.
+- **Commit envoyé :** `b1c0b950213943b4957e2ee48ec97040733ae4b2`.
+- **État du dépôt :** La branche `main` est synchronisée avec `origin/main` et le répertoire de travail est propre.
+- **Fichier `.env` :** Non suivi par Git. Son exclusion par `.gitignore` reste à vérifier.
+- **Relecture de la pull request :** Non applicable, aucune Pull Request n'ayant été créée.
 
 ---
 
