@@ -176,3 +176,4 @@ Points clés assimilés :
 - Intégration d'un cache mémoire intelligent (`@st.cache_data`) pour optimiser les performances de calcul.
 - Sécurisation et découplage propre de la logique métier grâce à un client HTTP dédié encapsulant la gestion des en-têtes et des exceptions.
 - Validation rigoureuse par 23 tests automatisés garantissant la non-régression du système.
+
