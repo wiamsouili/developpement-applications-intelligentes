@@ -1,8 +1,14 @@
 # ADR 004 : Sélection du modèle MaintAI basé sur le suivi d'expériences MLflow et le versionnement DVC
 
-Date : 16/11/2026 · Auteure : YEKHLEF Aya · Groupe : G3
+**Statut :** Accepté  
+**Date :** 16/11/2026  
+**Décideuse / Auteure :** YEKHLEF Aya  
+**Groupe :** G3  
+**Projet :** MaintAI  
 
-## Contexte
+---
+
+## Contexte et Problématique
 Dans le cadre de la démarche MLOps de MaintAI, plusieurs architectures et réglages d'hyperparamètres ont été évalués et tracés de manière reproductible à l'aide de **MLflow**, sur des versions de données étiquetées par **DVC**. 
 Le défi industriel impose d'anticiper les défaillances machines critiques sans saturer les équipes terrain. Comme établi depuis le début du projet, une panne non détectée (faux négatif) provoque un arrêt catastrophique de la chaîne de production dont le coût est disproportionnellement plus élevé qu'une visite d'inspection préventive superflue (faux positif). Le modèle retenu doit donc maximiser le **rappel (*recall*)** tout en maintenant une précision opérationnelle acceptable.
 
