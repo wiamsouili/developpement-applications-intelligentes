@@ -1,4 +1,5 @@
-# Compte rendu · TP6 : conteneuriser MaintAI (Docker, Docker Compose)
+cd ..
+ Compte rendu · TP6 : conteneuriser MaintAI (Docker, Docker Compose)
 
 **Groupe :*G3*  ·  **Membres :*El aouazi hafsa  ·  **Date :*23/11/2026* 2026-11-23
 
