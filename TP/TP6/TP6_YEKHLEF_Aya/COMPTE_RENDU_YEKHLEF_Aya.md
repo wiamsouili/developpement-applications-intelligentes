@@ -1,6 +1,6 @@
 # Compte rendu · TP6 : conteneuriser MaintAI (Docker, Docker Compose)
 
-**Groupe :** YEKHLEF Aya  ·  **Membres :** YEKHLEF Aya  ·  **Date :** 23/11/2026
+**Groupe :** YEKHLEF Aya  ·  **Membres :** YEKHLEF Aya  ·  **Date et heure de dépôt :** 23/11/2026 à 12:05 (heure locale) / 11:05 (UTC)
 
 > Remplissez chaque partie dans ce fichier, puis rendez-le avec la pull request du TP6.
 > Collez les sorties du terminal entre les lignes ``` (trois accents graves).
@@ -176,7 +176,7 @@ Dernière ligne de `python -m pytest` à la fin du sprint 2 :
 
 ## 6. Décision : l'ADR 005
 
-Dans `docs/adr/005-image-docker.md`. Résumez ici votre décision en deux phrases :
+Dans `docs/adr/005-image-docker_YEKHLEF_Aya.md`. Résumez ici votre décision en deux phrases :
 
 Nous avons retenu de ne pas embarquer le modèle dans l'image Docker mais de l'injecter au démarrage via un volume monté en lecture seule (`./models:/app/models:ro`), tout en excluant données, modèles, secrets et caches locaux avec `.dockerignore`. Ce choix garantit une image applicative légère (817 Mo), sécurisée et découplée des cycles de réentraînement MLOps sans nécessiter de reconstruction d'image à chaque nouveau modèle.
 
@@ -201,6 +201,7 @@ Aux TPs 4 et 5, la livraison se composait du wheel Python et des artefacts séri
 
 ## 8. Le rendu Git
 
+- Date et heure du dépôt : 23/11/2026 à 12:05:00 (heure locale) / 11:05:00 (UTC)
 - Lien de la pull request : https://github.com/wiamsouili/developpement-applications-intelligentes/pulls
 - Le tag `tp6` existe sur GitHub : oui
 - `git status` avant le commit : `.env`, `models/` ou `data/*.csv` apparaissaient-ils ? non
