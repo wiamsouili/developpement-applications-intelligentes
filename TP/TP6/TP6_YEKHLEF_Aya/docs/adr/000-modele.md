@@ -1,9 +1,9 @@
-# ADR 005 : Architecture de l'image Docker, gestion des modèles et exclusions .dockerignore
+# ADR : Architecture de l'image Docker, gestion des modèles et exclusions .dockerignore
 
 Date : 23/11/2026 · Auteur : YEKHLEF Aya
 
 ## Contexte
-MaintAI doit être conteneurisé afin d'être déployable de manière reproductible sur n'importe quel serveur ou machine sans préparation manuelle d'un environnement virtuel Python (`.venv`). L'application comprend une API FastAPI et une interface utilisateur Streamlit, exploitant un modèle d'apprentissage automatique (`model.joblib`) et des variables d'environnement confidentielles (clés d'API). Deux questions architecturales majeures se posent :
+MaintAI doit être conteneurisé afin d'être déployable de manière reproductible sur n'importe quel serveur ou machine sans préparation manuelle d'un environnement virtuel Python (`.venv`). L'application comprend une API FastAPI et une interface utilisateur Streamlit, exploitant un modèle d'apprentissage automatique (`model.joblib`) et des variables d'environnement confidentielles (clés d'API). Deux contraintes majeures se posent :
 1. Le modèle prédictif doit-il être embarqué directement dans l'image Docker ou injecté au lancement par un volume ?
 2. Quels éléments doivent être formellement exclus du contexte de build via `.dockerignore` ?
 
