@@ -2,7 +2,11 @@
 
 **Statut :** Accepté  
 **Date :** 16/11/2026  
+<<<<<<< HEAD
 **Heure :** 12:14 
+=======
+**Heure :** 12:16  
+>>>>>>> 29d265c4bf5d89ba807bd44a63b0f154a608b1b1
 **Auteure :** Hajar Belhachmi  
 **Groupe :** G3  
 **Projet :** MaintAI  
